@@ -15,7 +15,8 @@ $ oj login https://atcoder.jp/
 $ acc login
 
 # Set oj path
-$ acc config oj-path /Users/username/Dev/AtCoder/.venv/bin/oj
+$ pwd
+$ acc config oj-path /Users/username/Dev/AtCoderEnv/.venv/bin/oj
 
 # Set a template
 $ mv py `acc config-dir`
@@ -34,19 +35,19 @@ $ source .venv/bin/activate
 If you solve "abc101" "a"
 ```bash
 # download tasks
-acc new abc101
-cd abc101/a
+$ acc new abc101
+$ cd abc101/a
 ```
 Write the answer to main.py
 ```bash
 # test
-oj t -c "pypy main.py" -d ./tests/
+$ oj t -c "pypy main.py" -d ./tests/
 ```
 If the answer is correct the result is "AC"
 
 ```bash
 # Submit answer as "pypy"
-acc s main.py -- --guess-python-interpreter pypy
+$ acc s main.py -- --guess-python-interpreter pypy
 ```
 
 # Reference
